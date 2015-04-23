@@ -1,0 +1,144 @@
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.logo {
+    width: 60px;
+}
+
+.full-height
+{
+    height: 100%;
+}
+
+.almost-full-height
+{
+    height: 80%;
+}
+
+a:focus
+{
+    outline: 0;
+}
+
+#home
+{
+    background-color: #222;
+    background-image: url(../img/header-bg.jpg);
+    color: #fff;
+    background-attachment: fixed !important;
+    background-position: center center !important;
+    background-size: cover !important;
+    min-height: 600px;
+}
+
+#home a, #home a:hover
+{
+    color: #fff;
+}
+
+#home .intro-text {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+#home .intro-text .intro-lead-in {
+    margin-bottom: 25px;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+#home .intro-text h1
+{
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 22px;
+    margin-bottom: 50px;
+}
+
+#home .intro-text .intro-heading {
+    margin-bottom: 25px;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+@media(min-width:768px) {
+
+    #home .intro-text .intro-lead-in {
+        margin-bottom: 25px;
+        font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 40px;
+    }
+
+    #home .intro-text .intro-heading {
+        margin-bottom: 25px;
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 75px;
+        font-weight: 700;
+        line-height: 75px;
+    }
+    
+    #home .intro-text h1 {
+        margin-bottom: 100px;
+        font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 40px;
+    }
+}
+
+.vertical-align
+{
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.vertical-align > div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.capability
+{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.capability img
+{
+    text-align: center;
+}
+
+.half-rule {
+    margin: 40px auto;
+    width: 100px;
+}
+
+#capabilities {
+    background: none repeat scroll 0 0 #eee;
+}
+
+#default {
+    background-color: black;
+    height: 100px;
+}
+
+.thumbnail {
+    border: none;
+    margin-top: 40px;
+}
+
+footer {
+    padding: 20px 0;
+}
