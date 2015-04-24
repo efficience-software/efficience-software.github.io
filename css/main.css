@@ -56,10 +56,11 @@ a:link, a:visited {
 
 #home .my-page-header
 {
+    /*background-color: #031c23;*/
     background-image: url(../img/header-bg.jpg);
-    background-attachment: fixed !important;
+    /*background-attachment: fixed !important;
     background-position: center center !important;
-    background-size: cover !important;
+    background-size: cover !important;*/
 }
 
 #default .my-page-header {
