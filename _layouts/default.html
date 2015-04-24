@@ -8,17 +8,14 @@
 
     {% include nav.html %}
         
-        <div class="container-fluid my-page-header">
-            <div class="row" >
-                <div class="col-md-12">
-                    <div class="intro-text">
-                        <p class="text-uppercase intro-heading">{{page.text-intro}}</p>
-                    </div>
-                </div>
-            </div>
+        <div class="my-page-header almost-full-height text-center">
+            <p class="intro-heading">{{page.text-intro}}</p>
+            <p><a class="btn btn-default page-scroll" href="#intro-section" role="button">{{page.call-to-action}}</a></p>
         </div>
         
-        {{ content }}
+        <div class="container" id="intro-section">
+            {{ content }}
+        </div>
         
     {% include footer.html %}
     {% include js.html %}
