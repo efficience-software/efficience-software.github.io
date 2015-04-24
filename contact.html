@@ -1,69 +1,44 @@
 ---
 layout: default
 title: Contact
+id: contact
+text-intro: Nous sommes disponibles pour répondre à vos questions
 ---
 
-<div class="container-fluid" id="default">
-    <div class="row"></div>
-</div>
-
 <div class="container">
-    <h1>Contact</h1>
-    <div class="row">
+    <h1>Commencons notre collaboration</h1>
+    <div class="row text-center">
         <div class="col-md-12">
-            <p>N'hésitez pas à nous contacter pour une demande d'informations, un projet ou une candidature.
-            <br>Nous serions ravis d'en discuter avec vous.</p>
+            <p class="lead">Vous avez un projet à nous soumettre ou souhaitez solliciter notre expertise?<br>Contactez-nous.</p>
         </div>
     </div>
-    <section>
-        <h2>Nos coordonnées</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <section>
-                <div class="media">
-                    <div class="media-left media-middle">
-                        <span class="media-object fa-stack fa-2x">
-                            <i class="fa fa-circle fa-stack-2x icon-color"></i>
-                            <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </div>
-                    <div class="media-body">
-                        <h3><a href="tel: {{ site.phone }}">{{site.phone}}</a></h3>
-                    </div>
-                </div>
-                </section>
-            </div>
-            <div class="col-md-6">
-                <section>
-                <div class="media">
-                    <div class="media-left media-middle">
-                        <span class="media-object fa-stack fa-2x">
-                            <i class="fa fa-circle fa-stack-2x icon-color"></i>
-                            <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </div>
-                    <div class="media-body">
-                        <h3><a href="mailto: {{ site.email }}">{{site.email}}</a></h3>
-                    </div>
-                </div>
-                </section>
-            </div>
+    <div class="row text-center"> 
+        <div class="col-lg-4">
+            <a href="tel: {{ site.phone }}">
+                <span class="fa-stack fa-2x thumbnail">
+                    <i class="fa fa-circle fa-stack-2x icon-color"></i>
+                    <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+                </span>
+                <p>{{site.phone}}</p>
+            </a>
         </div>
-    </section>
-    <section>
-        <div class="row">
-            <div class="col-md-12">
-                <h2>Vous avez une idée?</h2>
-                <p>Vous pouvez nous en faire part dès aujourd'hui en remplissant ce formulaire.</p>
-                <p class="lead">Etape 1: Présentez-nous votre projet</p>
-                <p>Décrivez-nous ce que vous souhaitez faire et comment nous pouvons vous aider.</p>
-                <p class="lead">Etape 2: Rencontrons-nous</p>
-                <p>Le but de cette discussion est de mieux comprendre ce que vous cherchez à accomplir, vos attentes et commencer à réfléchir à la façon dont nous pouvons travailler ensemble.</p>
-                <p class="lead">Etape 3: Recevez notre proposition</p>
-                <p>Maintenant que nous en savons plus sur votre projet, nous pouvons préparer une proposition basée sur notre discussion et qui inclut un planning et un budget.</p>
-                <p class="lead">Prêt à travailler avec nous?</p>
-                <a class="btn btn-default" target="_blank"  href="https://efficiencesoftware.wufoo.com/forms/mnc3z3b1nyn4ue/">Remplissez le formulaire</a>
-            </div>
+        <div class="col-lg-4">
+            <a href="tel: {{ site.phone }}">
+                <span class="fa-stack fa-2x thumbnail">
+                    <i class="fa fa-circle fa-stack-2x icon-color"></i>
+                    <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                </span>
+                <p>{{site.email}}</p>
+            </a>
         </div>
-    </section>
+        <div class="col-lg-4 hidden-xs hidden-sm hidden-md">
+            <a href="https://efficiencesoftware.wufoo.com/forms/mnc3z3b1nyn4ue/">
+                <span class="fa-stack fa-2x thumbnail">
+                    <i class="fa fa-circle fa-stack-2x icon-color"></i>
+                    <i class="fa fa-edit fa-stack-1x fa-inverse"></i>
+                </span>
+                <p>Renseignez notre formulaire</p>
+            </a>
+        </div>
+    </div>
 </div>

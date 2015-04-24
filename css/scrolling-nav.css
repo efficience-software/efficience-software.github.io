@@ -18,6 +18,7 @@
 
 .navbar-inverse .nav li a {
     font-size: 14px;
+    text-transform: uppercase;
 }
 
 .navbar-inverse .navbar-brand:hover,

@@ -4,9 +4,19 @@
   {% include head.html %}
 
 
-    <body id="page-top" class="index">
+    <body id="{{page.id}}" class="index" >
 
     {% include nav.html %}
+        
+        <div class="container-fluid my-page-header">
+            <div class="row" >
+                <div class="col-md-12">
+                    <div class="intro-text">
+                        <p class="text-uppercase intro-heading">{{page.text-intro}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         
         {{ content }}
         
