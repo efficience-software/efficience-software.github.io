@@ -56,11 +56,11 @@ a:link, a:visited {
 
 #home .my-page-header
 {
-    /*background-color: #031c23;*/
-    background-image: url(../img/header-bg.jpg);
-    /*background-attachment: fixed !important;
-    background-position: center center !important;
-    background-size: cover !important;*/
+    background-color: #031c23;
+}
+
+#home .icon-color {
+    color: #031c23;
 }
 
 #default .my-page-header {
@@ -135,6 +135,16 @@ a:link, a:visited {
         font-size: 18px;
     }
 
+}
+
+@media(max-width:1024px) {
+    html {
+        text-align: center;
+    }
+    
+    ul {
+        text-align: left;
+    }
 }
 
 .capability
