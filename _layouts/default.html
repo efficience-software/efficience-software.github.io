@@ -7,16 +7,39 @@
     <body id="{{page.id}}" class="index" >
 
     {% include nav.html %}
-        
-        <div class="my-page-header almost-full-height text-center">
-            <p class="intro-heading">{{page.text-intro}}</p>
-            <p><a class="btn btn-default page-scroll" href="#intro-section" role="button">{{page.call-to-action}}</a></p>
+		        
+        {% if page.id == 'hello' %}
+            <div class="my-page-header full-height">
+        {% else %}
+            <div class="my-page-header">
+        {% endif %}
+                <p class="intro-heading">{{page.text-intro}}</p>
+                {% if page.more-text != null %}
+                    <p><a class="btn btn-default page-scroll" href="#intro-section" role="button">{{page.more-text}}</a></p>
+                {% else %}
+                    <p class="text-center"><a href="#intro-section" class="page-scroll">
+                        <i class="fa fa-angle-double-down fa-4x"></i>
+                    </a></p>
+                {% endif %}
         </div>
-        
+				        
         <div class="container" id="intro-section">
             {{ content }}
         </div>
         
+        {% if page.id != 'contact' %}
+        <div class="call-to-action">
+            <h3>{{page.call-to-action}}</h3>
+            <a class="btn btn-default" href="/contact" role="button">Parlez-nous de votre projet</a>
+        </div>
+		{% else %}
+		<div class="call-to-action">
+            <h3>Vous rechercher un partenaire pour vous accompagner dans la réalisation de votre projet?</h3>
+            <a class="btn btn-default" href="/contact" role="button">Parlez-nous de votre projet</a>
+        </div>
+        {% endif %}
+                
+    {% include about.html %}
     {% include footer.html %}
     {% include js.html %}
 
