@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html>
-
   {% include head.html %}
-
-
     <body id="{{page.id}}" class="index" >
-
     {% include nav.html %}
-        
-        {{ content }}
-        
+		<div class="full-width">
+        	<div class="my-page-header full-height">
+				<div class="container">
+					<p class="intro-heading">{{page.text-intro}}</p>
+				</div>
+			</div>
+		</div>
+        <div class="container" id="intro-section">
+            {{ content }}
+        </div>
+        <hr>
+		<div class="call-to-action">
+			<p>Vous rechercher un partenaire pour vous accompagner dans la réalisation de votre projet?</p>
+			<a class="btn btn-default" href="/contact" role="button">Contactez-nous</a>
+		</div>
     {% include footer.html %}
     {% include js.html %}
-
     </body>
 </html>
