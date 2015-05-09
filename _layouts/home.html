@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-    <body id="{{page.id}}" class="index" >
+    <body id="{{page.id}}" class="index">
     {% include nav.html %}
 		<div class="full-width">
         	<div class="my-page-header full-height">
 				<div class="container">
-					<p class="intro-heading">{{page.text-intro}}</p>
+					<h1>{{page.text-intro}}</h1>
 				</div>
 			</div>
 		</div>
-        <div class="container" id="intro-section">
+        <div class="container" id="services-list">
             {{ content }}
         </div>
-        <hr>
 		<div class="call-to-action">
 			<p>Vous rechercher un partenaire pour vous accompagner dans la réalisation de votre projet?</p>
 			<a class="btn btn-default" href="/contact" role="button">Contactez-nous</a>

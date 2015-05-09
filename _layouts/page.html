@@ -1,36 +1,28 @@
 <!DOCTYPE html>
 <html>
-
   {% include head.html %}
-
-
     <body id="{{page.id}}" class="index" >
-
     {% include nav.html %}
-		
-		<div class="my-page-header">
-			<div class="container">
-				<p class="intro-heading">{{page.text-intro}}</p>
+		<div class="full-width">
+        	<div class="my-page-header almost-full-height">
+				<div class="container">
+					<h1>{{page.text-intro}}</h1>
+				</div>
 			</div>
-		</div>
-				        
-        <div class="container" id="intro-section">
+		</div>    
+        <div class="container" id="service-presentation">
             {{ content }}
         </div>
-        
-        {% if page.id != 'contact' %}
-			<div class="call-to-action">
-				{% if page.call-to-action != null %}
-					<p>{{page.call-to-action}}</p>
-				{% else %}
-					<p>Vous rechercher un partenaire pour vous accompagner dans la réalisation de votre projet?</p>
-				{% endif %}
-				<a class="btn btn-default" href="/contact" role="button">Contactez-nous</a>
-			</div>
-        {% endif %}
-                
+		<div class="call-to-action">
+			{% if page.call-to-action != null %}
+				<p>{{page.call-to-action}}</p>
+			{% else %}
+				<p>Vous rechercher un partenaire pour vous accompagner dans la réalisation de votre projet?</p>
+			{% endif %}
+			<a class="btn btn-default" href="/contact" role="button">Contactez-nous</a>
+		</div>        
+	{% include about.html %}
     {% include footer.html %}
     {% include js.html %}
-
     </body>
 </html>
