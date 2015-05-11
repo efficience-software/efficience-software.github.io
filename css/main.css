@@ -104,8 +104,11 @@ a:focus
     color: #35465A;
 }
 
-#services-list a {
-    color: #000;
+a {
+    color: #35465A;
+}
+
+#capabilities a {
     font-weight: bold;
 	font-size: 19px;
 }
