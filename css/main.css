@@ -23,11 +23,13 @@ html, body {
 }
 
 .content, .call-to-action {
-	padding: 4em 0;
+	padding-top: 4em;
+	padding-bottom: 4em;
 }
 
 .capability {
-	padding: 2em 0;
+	padding-top: 2em;
+	padding-bottom: 2em;
 }
 
 .call-to-action {
@@ -43,7 +45,8 @@ html, body {
 }
 
 footer, .about {
-	padding: 2em 0;
+	padding-top: 2em;
+	padding-bottom: 2em;
     color: #999;
     font-size: 14px;
     line-height: 26px;
@@ -54,7 +57,8 @@ h1, .h1, .intro-heading {
 	font-family: bebas;
     font-size: 45px;
     line-height: 1;
-    margin: 2em 0px;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 h2, h3, h4, h5 {
@@ -116,7 +120,7 @@ a {
 
 #capabilities a {
     font-weight: bold;
-	font-size: 19px;
+	font-size: 17px;
 }
 
 #service-presentation p {
@@ -154,6 +158,10 @@ a {
     h1, .intro-heading {
         font-size: 52px;
     }
+	
+	#capabilities a {
+		font-size: 19px;
+	}
     
 }
 
