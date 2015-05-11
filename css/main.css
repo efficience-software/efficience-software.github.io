@@ -1,11 +1,11 @@
 @font-face {
     font-family: bebas;
-    src: url("../fonts/bebas/BebasNeue regular.otf");
+    src: url("/fonts/bebas/BebasNeue regular.otf");
 }
 
 @font-face {
 	font-family: glober;
-    src: url("../fonts/glober/Glober SemiBold Free.otf");
+    src: url("/fonts/glober/Glober SemiBold Free.otf");
 }
 
 html, body {
