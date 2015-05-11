@@ -1,5 +1,5 @@
 @font-face {
-    font-family: bebas;
+    font-family: mybebas;
     src: url("/fonts/bebas/BebasNeue regular.otf");
 }
 
@@ -45,7 +45,7 @@ footer, .about {
 
 h1, .h1, .intro-heading {
     color: #fff;
-	font-family: bebas;
+	font-family: mybebas;
     font-size: 45px;
     line-height: 1;
     margin: 2em 0px;
