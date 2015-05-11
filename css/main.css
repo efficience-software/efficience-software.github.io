@@ -1,6 +1,7 @@
 @font-face {
     font-family: mybebas;
     src: url("/fonts/bebas/BebasNeue regular.otf");
+	src: url("/fonts/bebas/BebasNeue regular.ttf") format('truetype');
 }
 
 @font-face {
