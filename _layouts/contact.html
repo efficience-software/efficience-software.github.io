@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+    <body id="{{page.id}}" class="index">
+    {% include nav.html %}
+		<div class="full-width">
+			<div class="my-page-header almost-full-height">
+				<div class="container">
+					<h1>{{page.text-intro}}</h1>
+				</div>
+			</div>
+		</div>    
+        <div class="container content">
+            {{ content }}
+        </div> 
+	{% include about.html %}
+    {% include footer.html %}
+    {% include js.html %}
+    </body>
+</html>

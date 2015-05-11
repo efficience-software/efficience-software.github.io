@@ -1,0 +1,173 @@
+@font-face {
+    font-family: bebas;
+    src: url("../fonts/bebas/BebasNeue regular.otf");
+}
+
+@font-face {
+	font-family: glober;
+    src: url("../fonts/glober/Glober SemiBold Free.otf");
+}
+
+html, body {
+	font-family: glober;
+    font-size: 18px;
+    color: #000;
+	text-align: center;
+	background-color: #fcfcfa;
+}
+
+.content, .call-to-action {
+	padding: 4em 0;
+}
+
+.capability {
+	padding: 2em 0;
+}
+
+.call-to-action {
+	background-color: #F4C95E;
+}
+
+.call-to-action, .call-to-action p, .call-to-action h2, .call-to-action h3, .btn {
+	color: #7b631e;
+}
+
+.about {
+	background-color: #f2f5f4;
+}
+
+footer, .about {
+	padding: 2em 0;
+    color: #999;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+h1, .h1, .intro-heading {
+    color: #fff;
+	font-family: bebas;
+    font-size: 45px;
+    line-height: 1;
+    margin: 2em 0px;
+}
+
+h2, h3, h4, h5 {
+    font-weight: bold;
+    color: #000;
+}
+
+h2, .h2 {
+    margin-bottom: 1em;
+}
+
+ul {
+	text-align: left;
+}
+
+a:focus
+{
+    outline: 0;
+}
+
+.btn
+{
+    border: 2px solid;  
+    font-size: 20px;
+	border-color: #7b631e;
+}
+
+.btn-default {
+	background-color: transparent;
+}
+
+.btn:hover, .btn:active, .btn:focus {
+    background-color: #7b631e;
+	color: #F4C95E;
+}
+
+.btn-default.active, .btn-default.focus, .btn-default:active, .btn-default:focus, .btn-default:hover, .open > .my-page-header .dropdown-toggle.btn-default{
+    border-color: #7b631e;
+}
+
+.full-width {
+	display: table;
+	width: 100%;
+}
+
+.my-page-header {
+    display: table-cell;
+    vertical-align: middle;
+    min-height: 600px;
+}
+
+#contact .icon-color {
+    color: #35465A;
+}
+
+#services-list a {
+    color: #000;
+    font-weight: bold;
+	font-size: 19px;
+}
+
+#service-presentation p {
+	text-align: left;
+}
+
+#home .my-page-header, #contact .my-page-header
+{
+    background-color: #35465A;
+}
+
+#page .my-page-header {
+    background-color: #F06A55;
+}
+
+.my-page-header a, .my-page-header a:hover
+{
+    color: #fff;
+}
+
+.red-emphasize {
+	color: #F06A55;
+}
+
+.blue-emphasize {
+	color: #35465A;
+}
+
+.yellow-emphasize {
+	color: #7b631e;
+}
+
+@media(min-width:768px) {
+
+    h1, .intro-heading {
+        font-size: 52px;
+    }
+    
+}
+
+@media(min-width:1024px) {
+
+    h1, .intro-heading {
+        font-size: 62px;
+    }
+	
+	.right {
+		text-align: right;
+	}
+	
+	.left {
+		text-align: left;
+	}
+
+}
+
+@media(min-width:1200px) {
+
+    h1, .intro-heading {
+        font-size: 72px;
+    }
+   
+}
