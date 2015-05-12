@@ -20,6 +20,9 @@ $(function() {
 
 function screenResize() {
 	var windowHeight = window.innerHeight;
+	if (windowHeight < 320) {
+		windowHeight = 320;
+	}
     $('.full-height').height(windowHeight);
     $('.almost-full-height').height(windowHeight - 60);
 }
