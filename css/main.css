@@ -24,6 +24,12 @@ html, body {
 
 .my-page-header, .full-height {
 	min-height: 320px;
+	height: 320px;
+}
+
+.almost-full-height {
+	min-height: 260px;
+	height: 260px;
 }
 
 .content, .call-to-action {
