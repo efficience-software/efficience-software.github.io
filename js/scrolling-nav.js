@@ -19,7 +19,7 @@ $(function() {
 });
 
 function screenResize() {
-var windowHeight = window.innerHeight;
+	var windowHeight = window.innerHeight;
     $('.full-height').height(windowHeight);
     $('.almost-full-height').height(windowHeight - 60);
 }

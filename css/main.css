@@ -22,6 +22,10 @@ html, body {
 	background-color: #fcfcfa;
 }
 
+.my-page-header, .full-height {
+	min-height: 320px;
+}
+
 .content, .call-to-action {
 	padding-top: 4em;
 	padding-bottom: 4em;
@@ -52,13 +56,18 @@ footer, .about {
     line-height: 26px;
 }
 
+h1 {
+	padding-left: 15px;
+    padding-right: 15px;
+}
+
 h1, .h1, .intro-heading {
     color: #fff;
 	font-family: bebas;
     font-size: 45px;
     line-height: 1;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 h2, h3, h4, h5 {
@@ -99,15 +108,16 @@ a:focus
     border-color: #7b631e;
 }
 
-.full-width {
-	display: table;
-	width: 100%;
+.parent {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 
-.my-page-header {
-    display: table-cell;
-    vertical-align: middle;
-    min-height: 600px;
+.vertical-align h1 {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 #contact .icon-color {
