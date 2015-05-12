@@ -138,7 +138,7 @@ a {
 
 #capabilities a {
     font-weight: bold;
-	font-size: 17px;
+	font-size: 15px;
 }
 
 #service-presentation p {
@@ -179,6 +179,16 @@ a {
 	
 	#capabilities a {
 		font-size: 19px;
+	}
+	
+	.my-page-header, .full-height {
+		min-height: 480px;
+		height: 480px;
+	}
+
+	.almost-full-height {
+		min-height: 480px;
+		height: 480px;
 	}
     
 }

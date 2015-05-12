@@ -19,7 +19,7 @@ $(function() {
 });
 
 function screenResize() {
-	var windowHeight = window.innerHeight;
+	var windowHeight = $(window).height();
 	if (windowHeight < 320) {
 		windowHeight = 320;
 	}
