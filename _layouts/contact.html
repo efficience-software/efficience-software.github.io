@@ -3,12 +3,10 @@
   {% include head.html %}
     <body id="{{page.id}}" class="index">
     {% include nav.html %}
-		<div class="full-width">
-			<div class="my-page-header almost-full-height vertical-align">
-				<h1>{{page.text-intro}}</h1>
-			</div>
+		<div class="parent">
+			{% include intro.html %}
 		</div>    
-        <div class="container content">
+        <div class="container" id="content">
             {{ content }}
         </div> 
 	{% include about.html %}
