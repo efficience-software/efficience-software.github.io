@@ -220,6 +220,14 @@ label {
 	text-transform: uppercase;
 }
 
+#contact .delimeter {
+    border-top: thin solid #000;
+    content: "";
+    margin-top: 1em;
+	margin-bottom: 1em;
+    width: 6em;
+}
+
 #post h2 {
 	text-align: left;
 }
