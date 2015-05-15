@@ -5,39 +5,58 @@ id: contact
 text-intro: Nous sommes disponibles pour répondre à vos <span class="red-emphasize">questions</span>
 more-text: contactez-nous
 ---
-
-    <h2>Commençons notre collaboration</h2>
-    <div class="row text-center" >
-        <div class="col-md-12">
-            <p class="lead">Vous avez un projet à nous soumettre ou souhaitez solliciter notre expertise?<br>Contactez-nous.</p>
-        </div>
-    </div>
-    <div class="row text-center"> 
-        <div class="col-lg-4 col-md-6">
-            <a href="tel: {{ site.phone }}">
-                <span class="fa-stack fa-2x">
-                    <i class="fa fa-circle fa-stack-2x icon-color"></i>
-                    <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
-                </span>
-                <p>{{site.phone}}</p>
-            </a>
-        </div>
-        <div class="col-lg-4 col-md-6">
-            <a href="mailto: {{ site.email }}">
-                <span class="fa-stack fa-2x">
-                    <i class="fa fa-circle fa-stack-2x icon-color"></i>
-                    <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
-                </span>
-                <p>{{site.email}}</p>
-            </a>
-        </div>
-        <div class="col-lg-4 hidden-xs hidden-sm hidden-md">
-            <a href="https://efficiencesoftware.wufoo.com/forms/mnc3z3b1nyn4ue/" target="_blank">
-                <span class="fa-stack fa-2x">
-                    <i class="fa fa-circle fa-stack-2x icon-color"></i>
-                    <i class="fa fa-edit fa-stack-1x fa-inverse"></i>
-                </span>
-                <p>Renseignez notre formulaire</p>
-            </a>
-        </div>
+    <div class="row"> 
+		<div class="col-xs-12 col-md-6">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>Vous avez un projet à nous soumettre ou souhaitez solliciter notre expertise?</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<p>Téléphone</p>
+					<p><a href="tel: {{ site.phone }}">{{site.phone}}</a></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<p>E-mail</p>
+					<p><a href="mailto: {{ site.email }}">{{site.email}}</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-md-6">
+			<form id="contact-form" novalidate>
+				<div class="control-group">
+					<label class="control-label">Nom</label>
+					<div class="controls">
+				  		<input type="text" id="name" data-validation-required-message="Merci de renseigner votre nom" required/>
+				  		<p class="help-block text-danger"></p>
+					</div>
+			  	</div>
+				<div class="control-group">
+					<label class="control-label">E-mail</label>
+					<div class="controls">
+						<input type="email" id="email" data-validation-required-message="Merci de renseigner votre e-mail" data-validation-email-message="l'adresse email n'est pas valide" required/>
+						<p class="help-block text-danger"></p>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">Téléphone <span class="small">(optionnel)</span></label>
+					<div class="controls">
+				  		<input type="tel" id="phone"/>
+				  		<p class="help-block text-danger"></p>
+					</div>
+			  	</div>
+				<div class="control-group">
+					<label class="control-label">Message</label>
+					<div class="controls">
+						<textarea type="tel" id="message" rows="5" data-validation-required-message="En quoi pouvons-nous vous être utile?" required></textarea>
+				  		<p class="help-block text-danger"></p>
+					</div>
+			  	</div>
+				<div id="result"></div>
+				<button type="submit" id="submit-contact" class="btn btn-default">Envoyer</button>
+			</form>
+		</div>
     </div>

@@ -54,7 +54,7 @@ html, body {
 	background-color: #F4C95E;
 }
 
-.call-to-action, .call-to-action p, .call-to-action h2, .call-to-action h3, .btn {
+.call-to-action, .call-to-action p, .call-to-action h2, .call-to-action h3 {
 	color: #7b631e;
 }
 
@@ -97,28 +97,33 @@ ul {
 	text-align: left;
 }
 
+.text-danger {
+    color: #a94442;
+}
+
 a:focus
 {
     outline: 0;
 }
 
-.btn
+.call-to-action .btn
 {
     border: 2px solid;  
     font-size: 20px;
 	border-color: #7b631e;
+	color: #7b631e;
 }
 
-.btn-default {
+.call-to-action .btn-default {
 	background-color: transparent;
 }
 
-.btn:hover, .btn:active, .btn:focus {
+.call-to-action .btn:hover, .call-to-action .btn:active, .call-to-action .btn:focus {
     background-color: #7b631e;
 	color: #F4C95E;
 }
 
-.btn-default.active, .btn-default.focus, .btn-default:active, .btn-default:focus, .btn-default:hover, .open > .my-page-header .dropdown-toggle.btn-default{
+.call-to-action .btn-default.active, .call-to-action .btn-default.focus, .call-to-action .btn-default:active, .call-to-action .btn-default:focus, .call-to-action .btn-default:hover, .open > .my-page-header .dropdown-toggle.btn-default{
     border-color: #7b631e;
 }
 
@@ -138,6 +143,11 @@ a:focus
 
 #contact .icon-color {
     color: #35465A;
+}
+
+
+.lead {
+	text-align: center;
 }
 
 a {
@@ -162,7 +172,7 @@ a {
     background-color: #F06A55;
 }
 
-#post .my-page-header, #notes .my-page-header{
+#post .my-page-header, #notes .my-page-header, #contact .my-page-header{
     background-color: #35465A;
 	min-height: 90px;
 	height: 90px;
@@ -173,8 +183,41 @@ a {
 }
 
 #post h1, #notes h1 {
+	padding-left: 0px;
+    padding-right: 0px;
 	color: #000;
 	padding-bottom: 1em;
+}
+
+#contact #content {
+	text-align: left;
+}
+
+#contact h1 {
+	padding-left: 0px;
+    padding-right: 0px;
+	font-family: glober;
+	font-size: 36px;
+	font-weight: bold;
+	color: #000;
+	padding-bottom: 1em;
+}
+
+label {
+	font-weight: normal;
+}
+
+#contact input, #contact textarea {
+    background: none repeat scroll 0 0 #A2C2CC;
+    border: medium none;
+    width: 100%;
+}
+
+#contact .btn {
+    border: thin solid #000;
+	border-radius: 0;
+	background-color: transparent;
+	text-transform: uppercase;
 }
 
 #post h2 {
