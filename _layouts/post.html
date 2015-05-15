@@ -7,8 +7,11 @@
 		</div>    
         <div class="container" id="content">
 			<img alt="{{page.alt}}" class="img-responsive center-block" src="{{page.img}}">
-            {{ content }}
+			<div class="post-content">
+            	{{ content }}
+			</div>
         </div>
+	{% include about.html %}
     {% include footer.html %}
     {% include js.html %}
     </body>
