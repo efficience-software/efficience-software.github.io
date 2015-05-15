@@ -4,7 +4,7 @@ title:  "Êtes-vous mobile friendly?"
 date:   2015-05-10
 img : "/img/mobile-friendly.png"
 alt : "votre site est-il mobile-friendly?"
-permalink: /notes/:title/
+permalink: /notes/mobile-friendly/
 ---
 # Si votre site n'est pas mobile-friendly, vous perdez des clients!
 Le nouvel algorithme de Google ajoute la compatibilité mobile d’un site aux critères d’indexation sur appareil mobile. Depuis le 21 Avril 2015, si votre site n’est pas optimisé pour les appareils mobiles, il y a des chances que vous ne soyez plus bien placés dans les pages de résultat de Google sur mobile. Vous pouvez même disparaitre complètement de la première page.  
