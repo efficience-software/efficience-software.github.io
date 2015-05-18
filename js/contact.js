@@ -62,7 +62,7 @@ $(function() {
 						'text': txt,
 						'to': [
 							{
-								'email': 'info@efficiencesoftware.fr',
+								'email': 'contact@efficiencesoftware.fr',
 								'name': 'Efficience Software Team',
 								'type': 'to'
 							}]
