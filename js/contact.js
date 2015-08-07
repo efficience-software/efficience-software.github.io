@@ -47,40 +47,25 @@ $(function() {
 				firstName = name.split(' ').slice(0, -1).join(' ');
 			}
 			var txt = "Nouveau message de " + firstName + ", " + email + ", " + phone + ":\n" + msg;
-            $.ajax({
-				type: "POST",
-				url: "https://mandrillapp.com/api/1.0/messages/send.json",
-				data: {
-					'key': 'pljV_C7R9G2bsDo_u1gRoA',
-					'message': {
-						'from_email': email,
-						'from_name': name,
-						'headers': {
-							'Reply-To': email
-						},
-						'subject': 'Formulaire de contact site web efficience software',
-						'text': txt,
-						'to': [
-							{
-								'email': 'contact@efficiencesoftware.fr',
-								'name': 'Efficience Software Team',
-								'type': 'to'
-							}]
-					}
-				}
-			})
-				.done(function (response) {
-					if (response.length == 1 && response[0].status == "sent") {
-						onSuccess();
-					} else {
-						var errorMsg = "votre message n'a pas pu être envoyé. Contactez-nous par téléphone.";
-						onError(firstName, errorMsg);
-					}
-				})
-				.fail(function (response) {
-					var errorMsg = "votre message n'a pas pu être envoyé à cause d'un problème technique. Essayez plus tard, ou contactez-nous par téléphone.";
-					onError(firstName, errorMsg);
-				});
+			
+			var data = { 
+				name: name, 
+				email: email,
+				message: txt
+			}
+		
+			// Run our Parse Cloud Code and 
+			// pass our 'data' object to it
+			Parse.Cloud.run("sendEmail", data, {
+			  success: function(object) {
+				onSuccess();
+			  },
+
+			  error: function(object, error) {
+				var errorMsg = "votre message n'a pas pu être envoyé à cause d'un problème technique. Essayez plus tard, ou contactez-nous par téléphone.";
+				onError(firstName, errorMsg);
+			  }
+			});
 		},
         filter: function() {
             return $(this).is(":visible");

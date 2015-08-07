@@ -27,5 +27,8 @@ function screenResize() {
     $('.almost-full-height').height(windowHeight - 60);
 }
 
+// Initialize Parse with your Parse application & javascript keys
+Parse.initialize("boR6jiYaE0qsDMzG1XF2bGM19QKGMLit2RaZisJC", "uRQ3bUgH2JWsRNygSRNXOjw6aWLr1fwZ3cnaYVma");
+
 $(window).resize(screenResize);
 screenResize();
