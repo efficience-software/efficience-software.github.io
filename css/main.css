@@ -2,7 +2,7 @@
     font-family: bebas;
 	src: url('/fonts/bebas/BebasNeueRegular.eot'); /* IE9 Compat Modes */
 	src: url('/fonts/bebas/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
-		url('/fonts/glober/BebasNeueRegular.otf')  format('opentype'),
+		url('/fonts/bebas/BebasNeueRegular.otf')  format('opentype'),
 		url('/fonts/bebas/BebasNeueRegular.woff') format('woff'),
 		url('/fonts/bebas/BebasNeueRegular.ttf')  format('truetype'),
 		url('/fonts/bebas/BebasNeueRegular.svg#BebasNeueRegular') format('svg');
