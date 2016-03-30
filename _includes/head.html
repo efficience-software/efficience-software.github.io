@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <meta property="og:title" content="ProxxiNews: Communiquez avec vos clients. Partout. Tout le temps."/>
-    <meta property="og:type" content="{% if page.img %}{{ article }}{% else %}{{ website }}{% endif %}"/>
+    <meta property="og:type" content="{% if page.img %}{{ 'article' }}{% else %}{{ 'website' }}{% endif %}"/>
     <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"/>
     <meta property="og:image" content="{% if page.img %}{{ page.img | prepend: site.url }}{% else %}{{ site.img }}{% endif %}"/>
     <meta property="og:site_name" content="Efficience Software"/>
