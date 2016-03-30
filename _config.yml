@@ -7,7 +7,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: ""
 url: http://www.efficiencesoftware.fr
 
-img: /img/connection.png
+img: http://res.cloudinary.com/efficiencesoftware/image/upload/v1459366287/team_did6sv.jpg
 
 # Build settings
 markdown: kramdown
