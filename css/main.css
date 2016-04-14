@@ -190,6 +190,10 @@ a {
 	padding-bottom: 1em;
 }
 
+#post h1 {
+  text-align: center;
+}
+
 #contact #content {
 	text-align: left;
 }
@@ -276,11 +280,11 @@ label {
     h1, .intro-heading {
         font-size: 52px;
     }
-	
+
 	.capabilities a {
 		font-size: 19px;
 	}
-	
+
 	.my-page-header, .full-height {
 		min-height: 480px;
 		height: 480px;
@@ -290,7 +294,7 @@ label {
 		min-height: 480px;
 		height: 480px;
 	}
-    
+
 }
 
 @media(min-width:1024px) {
@@ -298,11 +302,11 @@ label {
     h1, .intro-heading {
         font-size: 62px;
     }
-	
+
 	.right {
 		text-align: right;
 	}
-	
+
 	.left {
 		text-align: left;
 	}
@@ -314,5 +318,5 @@ label {
     h1, .intro-heading {
         font-size: 72px;
     }
-   
+
 }

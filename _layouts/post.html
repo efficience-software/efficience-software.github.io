@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-    <body id="post" class="index" >
+  <body id="post" class="index" >
     {% include nav.html %}
 		<div class="my-page-header">
-		</div>    
-        <div class="container" id="content">
+		</div>
+    <div class="container" id="content">
 			<img alt="{{page.alt}}" class="img-responsive center-block" src="{{page.img}}">
 			<div class="post-content">
-            	{{ content }}
+        {{ content }}
 			</div>
-        </div>
-	<hr>
+    </div>
+    <hr>
     {% include footer.html %}
     {% include js.html %}
-    </body>
+  </body>
 </html>

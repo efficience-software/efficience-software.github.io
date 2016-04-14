@@ -27,13 +27,13 @@ function onError(firstName, errorMsg) {
 }
 
 $(function() {
-    $("input,textarea").jqBootstrapValidation({
-        preventSubmit: true,
-        submitError: function($form, event, errors) {
-            // additional error messages or events
-        },
-        submitSuccess: function($form, event) {
-            // Prevent spam click and default submit behaviour
+	$("input,textarea").jqBootstrapValidation({
+    preventSubmit: true,
+    submitError: function($form, event, errors) {
+      // additional error messages or events
+    },
+    submitSuccess: function($form, event) {
+      // Prevent spam click and default submit behaviour
 			$("#submit-contact").attr("disabled", true);
 			event.preventDefault();
 
@@ -47,30 +47,25 @@ $(function() {
 				firstName = name.split(' ').slice(0, -1).join(' ');
 			}
 			var txt = "Nouveau message de " + firstName + ", " + email + ", " + phone + ":\n" + msg;
-			
-			var data = { 
-				name: name, 
-				email: email,
-				message: txt
-			}
-		
-			// Run our Parse Cloud Code and 
-			// pass our 'data' object to it
-			Parse.Cloud.run("sendEmail", data, {
-			  success: function(object) {
-				onSuccess();
-			  },
 
-			  error: function(object, error) {
-				var errorMsg = "votre message n'a pas pu être envoyé à cause d'un problème technique. Essayez plus tard, ou contactez-nous par téléphone.";
-				onError(firstName, errorMsg);
-			  }
+			$.ajax({
+		    url: "https://formspree.io/contact@efficiencesoftware.fr",
+		    method: "POST",
+		    data: {name: name, email: email, message: txt},
+		    dataType: "json",
+				success : function(code_html, statut){ // success est toujours en place, bien sûr !
+          onSuccess();
+				},
+				error : function(resultat, statut, erreur){
+					var errorMsg = "votre message n'a pas pu être envoyé à cause d'un problème technique. Essayez plus tard, ou contactez-nous par téléphone.";
+					onError(firstName, errorMsg);
+				}
 			});
 		},
-        filter: function() {
-            return $(this).is(":visible");
-        }
-    });
+    filter: function() {
+        return $(this).is(":visible");
+    }
+  });
 });
 
 // When clicking on Full hide fail/success boxes
