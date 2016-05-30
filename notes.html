@@ -13,7 +13,8 @@ text-intro: Un peu de <span class="blue-emphasize">lecture</span>
 			<a href="{{ post.url }}">
 				<img alt="{{post.alt}}" class="img-responsive center-block" src="{{post.img}}">
 				<div class="caption">
-					<h2>{{ post.title }}</h2>
+					<h2>{{ post.header }}</h2>
+          <span id="post-date">Posté le {{post.date | date: "%d-%m-%Y" }}</span>
 				</div>
 			</a>
     	</div>

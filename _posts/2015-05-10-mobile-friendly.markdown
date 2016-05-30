@@ -1,12 +1,13 @@
 ---
 layout: post
-title:  "Êtes-vous mobile friendly?"
+title:  "Mobile | Si votre site n'est pas mobile-friendly, vous perdez des clients!"
+header: "Êtes-vous mobile friendly?"
 date:   2015-05-10
-img : "/img/mobile-friendly.png"
+img : "/img/red.jpg"
 alt : "votre site est-il mobile-friendly?"
 permalink: /notes/mobile-friendly/
 ---
-# Si votre site n'est pas mobile-friendly, vous perdez des clients!
+
 Le nouvel algorithme de Google ajoute la compatibilité mobile d’un site aux critères d’indexation sur appareil mobile. Depuis le 21 Avril 2015, si votre site n’est pas optimisé pour les appareils mobiles, il y a des chances que vous ne soyez plus bien placés dans les pages de résultat de Google sur mobile. Vous pouvez même disparaitre complètement de la première page.  
 
 Il peut y avoir une conséquence que beaucoup d'entreprises ne réalisent pas. Un des critères d'indexation d'un site est le trafic généré. Si vous perdez des visiteurs sur mobile, alors cela pourrait bien affecter votre rang sur ordinateur également.

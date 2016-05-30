@@ -2,7 +2,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- some other stuff like link or script -->
-    <title>{% if page.title %}{{ site.title }} - {{ page.title }} {% else %}{{ site.title }}{% endif %}</title>
+    <title>{% if page.title %}{{ page.title }} | {{ site.title }} {% else %}{{ site.title }}{% endif %}</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
@@ -33,6 +33,10 @@
 		ga('send', 'pageview');
 
 	</script>
+
+  <script type="text/javascript" async defer
+    src="https://apis.google.com/js/platform.js?publisherid=102643413497891066567">
+  </script>
 
   <script src="//load.sumome.com/" data-sumo-site-id="2dacfcadfaa968fa852c90c4cef67fb69f488b1b35dc061db0cb44775c05f491" async="async"></script>
 
