@@ -30,6 +30,30 @@ html, body {
 	background-color: #fcfcfa;
 }
 
+/*
+ * Row with equal height columns
+ * --------------------------------------------------
+ */
+.row-eq-height {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row-eq-height > div[class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .row-eq-height, .row-eq-height > div[class*='col-'] {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+  }
+}
+
 .my-page-header, .full-height {
 	min-height: 320px;
 	height: 320px;
