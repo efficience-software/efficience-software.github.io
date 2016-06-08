@@ -210,8 +210,14 @@ a {
 	height: 90px;
 }
 
-#post img {
-	padding-bottom: 4em;
+.post-img {
+	margin-bottom: 4em;
+}
+
+.service-img {
+	margin-bottom: 1em;
+  height: 120px;
+  width: 120px;
 }
 
 #post h1, #notes h1 {
@@ -287,8 +293,12 @@ label {
 	text-align: left;
 }
 
-#notes .thumbnail {
+.thumbnail {
 	border: none;
+}
+
+.category {
+  margin-top: 2em;
 }
 
 .my-page-header a, .my-page-header a:hover

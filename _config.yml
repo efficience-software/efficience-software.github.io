@@ -14,9 +14,11 @@ markdown: kramdown
 permalink: pretty
 
 collections:
-    services:
-        output: true
-        permalink: /services/:path/
+  tools:
+    output: false
+  services:
+    output: true
+    permalink: /services/:path/
 
 gems:
     - jekyll-sitemap

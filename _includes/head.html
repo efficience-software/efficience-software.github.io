@@ -1,28 +1,29 @@
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- some other stuff like link or script -->
-    <title>{% if page.title %}{{ page.title }} | {{ site.title }} {% else %}{{ site.title }}{% endif %}</title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- some other stuff like link or script -->
+  <title>{% if page.title %}{{ page.title }} | {{ site.title }} {% else %}{{ site.title }}{% endif %}</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
-    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/scrolling-nav.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/main.css">
+  <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/scrolling-nav.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
 
-    <!-- Custom Fonts -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <!-- Custom Fonts -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-    <meta property="og:title" content="ProxxiNews: Communiquez avec vos clients. Partout. Tout le temps."/>
-    <meta property="og:type" content="{% if page.img %}{{ 'article' }}{% else %}{{ 'website' }}{% endif %}"/>
-    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"/>
-    <meta property="og:image" content="{% if page.img %}{{ page.img | prepend: site.url }}{% else %}{{ site.img }}{% endif %}"/>
-    <meta property="og:site_name" content="Efficience Software"/>
-    <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"/>
+  <meta property="og:title" content="ProxxiNews: Communiquez avec vos clients. Partout. Tout le temps."/>
+  <meta property="og:type" content="{% if page.img %}{{ 'article' }}{% else %}{{ 'website' }}{% endif %}"/>
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"/>
+  <meta property="og:image" content="{% if page.img %}{{ page.img | prepend: site.url }}{% else %}{{ site.img }}{% endif %}"/>
+  <meta property="og:site_name" content="Efficience Software"/>
+  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"/>
 
+  {% if jekyll.environment == "production" %}
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -39,6 +40,7 @@
   </script>
 
   <script src="//load.sumome.com/" data-sumo-site-id="2dacfcadfaa968fa852c90c4cef67fb69f488b1b35dc061db0cb44775c05f491" async="async"></script>
+  {% endif %}
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

@@ -1,0 +1,43 @@
+---
+layout: post
+title: "Site Web - 30 outils pour présenter et promouvoir votre activité en ligne."
+header: "30 outils pour présenter et promouvoir votre activité en ligne."
+date: 2016-06-08
+img : "/img/typewriter.jpg"
+alt : "Créer. Promouvoir. Analyser"
+permalink: /notes/tools/
+category_descriptions:
+  cms: Créez et mettez à jour votre site web sans connaissance technique.
+  newsletters: Récupérez des adresses mails et envoyez vos newsletters.
+  formulaires: Ajoutez un formulaire de contact à votre site web.
+  live_chat: Dialoguez en direct avec les visiteurs de votre site web.
+  sondages: Créez des questionnaires et analysez les résultats.
+  photos: Trouvez des photos haute résolution.
+  marketing_automation: Automatisez vos actions marketing.
+  analytique: Découvrez comment les visiteurs naviguent sur votre site web.
+  typographie: Polices de caractères à utiliser sur votre site web.
+  icônes: Trouvez des icônes pour votre site web.
+  nuancier: Roue chromatique pour assortir les bonnes couleurs entre elles.
+---
+
+<!-- <p><strong>I can't do x without a backend</strong> is often not true with the huge number of apps and services you can use with static websites.</p> -->
+{% assign categories = site.tools | group_by:"category" %}
+
+{% for current_category in categories %}
+	{% assign category_name = current_category.name | downcase | replace:' ','_' %}
+
+	<h2 class="section-heading">{{ current_category.name }}</h2>
+	<p>{{ page.category_descriptions[category_name] }}</p>
+	<div class="row row-eq-height category">
+	{% for service in site.tools %}
+		{% if service.category == current_category.name %}
+		<div class="col-xs-12 col-sm-6 col-md-3 text-center">
+			<div class="thumbnail">
+				<img alt="{{ service.name }}" class="img-responsive center-block service-img" src="{{ service.image_path }}">
+				<a href="{{ service.link }}" target="_blank">{{ service.name }}</a>
+	    </div>
+	  </div>
+		{% endif %}
+	{% endfor %}
+	</div>
+{% endfor %}
