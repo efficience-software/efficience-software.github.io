@@ -5,6 +5,7 @@ header: "Êtes-vous mobile friendly?"
 date:   2015-05-10
 img : "/img/red.jpg"
 alt : "votre site est-il mobile-friendly?"
+author: sandrine
 permalink: /notes/mobile-friendly/
 ---
 

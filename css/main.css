@@ -22,12 +22,15 @@
   font-style: normal;
 }
 
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
 html, body {
-	font-family: glober;
+	font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     color: #000;
 	text-align: center;
 	background-color: #fcfcfa;
+  font-weight: 400;
 }
 
 /*
@@ -117,7 +120,7 @@ h1, .h1, .intro-heading {
 }
 
 h2, h3, h4, h5 {
-    font-weight: bold;
+    font-weight: 700;
     color: #000;
 }
 
@@ -187,7 +190,7 @@ a {
 }
 
 .capabilities a {
-    font-weight: bold;
+    font-weight: 700;
 	font-size: 15px;
 }
 
@@ -212,6 +215,10 @@ a {
 
 .post-img {
 	margin-bottom: 4em;
+}
+
+.serv-img {
+  margin-top: 20px;
 }
 
 .service-img {
@@ -250,7 +257,7 @@ a {
 	padding-left: 0px;
     padding-right: 0px;
 	font-family: glober;
-	font-weight: bold;
+	font-weight: 700;
 	color: #000;
 }
 
@@ -265,7 +272,7 @@ a {
 }
 
 label {
-	font-weight: normal;
+	font-weight: 400;
 }
 
 #contact input, #contact textarea {

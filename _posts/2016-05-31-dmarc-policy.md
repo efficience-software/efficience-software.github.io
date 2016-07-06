@@ -5,6 +5,7 @@ header: "Pourquoi utiliser une adresse mail gratuite est une mauvaise idée pour
 date: 2016-05-31
 img : "/img/mail.jpg"
 alt : "Bonne pratique marketing"
+author: sandrine
 permalink: /notes/dmarc-policy/
 ---
 
