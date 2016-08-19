@@ -1,16 +1,8 @@
-	{% if page.page-id == 'home' %}
-		<div class="my-page-header full-height vertical-align">
-	{% else %}
-		<div class="my-page-header almost-full-height vertical-align">
-	{% endif %}
+	<div class="my-page-header vertical-align">
 		<div class="text">
 			<h1>{{page.text-intro}}</h1>
+			{% if page.page-id == 'home' %}
+			<a class="btn btn-default" href="/contact/" role="button">En savoir plus</a>
+			{% endif %}
 		</div>
 	</div>
-
-<a href="#content" class="page-scroll down">
-	<span class="fa-stack fa-2x">
-	  <i class="fa fa-circle-thin fa-stack-2x fa-inverse"></i>
-	  <i class="fa fa-angle-down fa-stack-1x fa-inverse"></i>
-	</span>
-</a>

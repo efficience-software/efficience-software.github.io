@@ -27,7 +27,7 @@
 html, body {
 	font-family: 'Open Sans', sans-serif;
     font-size: 18px;
-    color: #000;
+    color : #000;
 	text-align: center;
 	background-color: #fcfcfa;
   font-weight: 400;
@@ -141,10 +141,33 @@ a:focus
     outline: 0;
 }
 
+#home .btn
+{
+	border: thin solid #000;
+	border-radius:4px;
+    font-size: 20px;
+	border-color: #FFF;
+	color: #FFF;
+  margin-top: 45px;
+}
+
+#home .btn-default {
+	background-color: transparent;
+}
+
+#home .btn:hover, #home .btn:active, #home .btn:focus {
+    background-color: #FFF;
+	color: #4d8599;
+}
+
+#home .btn-default.active, #home .btn-default.focus, #home .btn-default:active, #home .btn-default:focus, #home .btn-default:hover, .open > .my-page-header .dropdown-toggle.btn-default{
+    border-color: #FFF;
+}
+
 .call-to-action .btn
 {
 	border: thin solid #000;
-	border-radius: 0;
+	border-radius:4px;
     font-size: 20px;
 	border-color: #FFF;
 	color: #FFF;
@@ -345,8 +368,8 @@ label {
 	}
 
 	.my-page-header, .full-height {
-		min-height: 480px;
-		height: 480px;
+		min-height: 540px;
+		height: 540px;
 	}
 
 	.almost-full-height {
