@@ -164,6 +164,10 @@ a:focus
     border-color: #FFF;
 }
 
+#home .my-page-header {
+  padding-top: 7em;
+}
+
 .call-to-action .btn
 {
 	border: thin solid #000;
