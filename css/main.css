@@ -33,6 +33,11 @@ html, body {
   font-weight: 400;
 }
 
+.nav-pills > li {
+    float: none;
+    display: inline-block;
+}
+
 /*
  * Row with equal height columns
  * --------------------------------------------------
@@ -58,8 +63,8 @@ html, body {
 }
 
 .my-page-header, .full-height {
-	min-height: 320px;
-	height: 320px;
+	min-height: 470px;
+	height: 470px;
 }
 
 .almost-full-height {
@@ -128,7 +133,7 @@ h2, .h2 {
     margin-bottom: 1em;
 }
 
-ul {
+.service-presentation ul {
 	text-align: left;
 }
 
@@ -165,7 +170,7 @@ a:focus
 }
 
 #home .my-page-header {
-  padding-top: 7em;
+  padding-top: 6.5em;
 }
 
 .call-to-action .btn
@@ -202,6 +207,14 @@ a:focus
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+#home .vertical-align .text {
+  position: relative;
+  top: 30%;
+  -webkit-transform: translateY(-40%);
+  -ms-transform: translateY(-40%);
+  transform: translateY(-40%);
 }
 
 #contact .icon-color {
@@ -363,9 +376,30 @@ label {
 
 @media(min-width:768px) {
 
-    h1, .intro-heading {
-        font-size: 52px;
-    }
+  .vertical-align .text {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  #home .vertical-align .text {
+    position: relative;
+    top: 60%;
+    -webkit-transform: translateY(-60%);
+    -ms-transform: translateY(-60%);
+    transform: translateY(-60%);
+  }
+
+
+  #home .my-page-header {
+    padding-top: 0em;
+  }
+
+  h1, .intro-heading {
+      font-size: 52px;
+  }
 
 	.capabilities a {
 		font-size: 19px;
