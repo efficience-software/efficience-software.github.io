@@ -106,12 +106,12 @@ footer, .about {
     line-height: 26px;
 }
 
-h1 {
+.intro-heading {
 	padding-left: 15px;
     padding-right: 15px;
 }
 
-h1, .h1, .intro-heading {
+.intro-heading {
     color: #fff;
 	font-family: bebas;
     font-size: 45px;
@@ -124,12 +124,12 @@ h1, .h1, .intro-heading {
   font-size: 40px;
 }
 
-h2, h3, h4, h5 {
+h1, h2, h3, h4, h5 {
     font-weight: 700;
     color: #000;
 }
 
-h2, .h2 {
+h1, .h1 {
     margin-bottom: 1em;
 }
 
@@ -397,7 +397,7 @@ label {
     padding-top: 0em;
   }
 
-  h1, .intro-heading {
+  .intro-heading {
       font-size: 52px;
   }
 
@@ -419,7 +419,7 @@ label {
 
 @media(min-width:1024px) {
 
-    h1, .intro-heading {
+    .intro-heading {
         font-size: 62px;
     }
 
@@ -435,7 +435,7 @@ label {
 
 @media(min-width:1200px) {
 
-    h1, .intro-heading {
+    .intro-heading {
         font-size: 72px;
     }
 
